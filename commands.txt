@@ -1,0 +1,18 @@
+commands
+
+liquibase update
+
+liquibase diff --output-file=myfile.json 
+liquibase diff-changelog --output-file=myfile.mysql.sql
+
+liquibase rollback --tag=mytag --changelog-file=example-changelog.xml
+
+liquibase history --output-file=myfile.xml
+
+liquibase tag --tag=myTag
+
+liquibase validate --changelog-file=example-changelog.xml
+
+liquibase --output-file=mySnapshot.json snapshot --snapshot-format=json
+
+liquibase generate-changelog --changelog-file=example-changelog.mysql.sql
