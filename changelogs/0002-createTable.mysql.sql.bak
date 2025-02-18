@@ -21,9 +21,5 @@ CREATE TABLE cat (id INT AUTO_INCREMENT NOT NULL, name VARCHAR(50) NULL, CONSTRA
 
 -- changeset joel.rodriguez:4 Labels:insertRows context:dev
 INSERT INTO cat (name) VALUES ('Melanie'), ('Pixy');
--- rollback DELETE FROM dog WHERE name in ('Melanie', 'Pixy');
-
-
--- changeset joel.rodriguez:5 Labels:insertRows context:dev
 INSERT INTO cat (name) VALUES ('Joan');
--- rollback DELETE FROM dog WHERE name in ('Joan');
+-- rollback DELETE FROM dog WHERE name in ('Melanie', 'Pixy');
