@@ -2,17 +2,3 @@ databaseChangeLog:
   - includeAll:
       path: "changelogs/"
       relativeToChangelogFile: truedatabaseChangeLog
-databaseChangeLog:
-- changeSet:
-    id: 1737156293587-1
-    author: Joddie (generated)
-    changes:
-    - dropTable:
-        tableName: cat
-- changeSet:
-    id: 1737156293587-2
-    author: Joddie (generated)
-    changes:
-    - dropTable:
-        tableName: dog
-

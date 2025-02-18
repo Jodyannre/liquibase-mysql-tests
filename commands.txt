@@ -16,3 +16,10 @@ liquibase validate --changelog-file=example-changelog.xml
 liquibase --output-file=mySnapshot.json snapshot --snapshot-format=json
 
 liquibase generate-changelog --changelog-file=example-changelog.mysql.sql
+
+
+
+liquibase generate-changelog --changelog-file=newCat.mysql.sql
+
+
+liquibase rollbackCount 1

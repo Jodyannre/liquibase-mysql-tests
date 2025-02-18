@@ -1,0 +1,19 @@
+databaseChangeLog:
+- changeSet:
+    id: 1739849063698-1
+    author: Joddie (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            autoIncrement: true
+            constraints:
+              nullable: false
+              primaryKey: true
+            name: id
+            type: INT
+        - column:
+            name: name
+            type: VARCHAR(50)
+        tableName: person
+
